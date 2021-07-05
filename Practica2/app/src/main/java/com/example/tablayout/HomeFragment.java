@@ -6,19 +6,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 
-import androidx.cursoradapter.widget.SimpleCursorAdapter;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.ListFragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
-
-import java.util.ArrayList;
 
 public class HomeFragment extends ListFragment {
 
@@ -35,7 +28,7 @@ public class HomeFragment extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id)
     {
         Intent intent = new Intent(getActivity(), GameDetail.class);
-        SQLiteOpenHelper gameDbHelper = new GameDataHelper(getContext()) ;
+        SQLiteOpenHelper gameDbHelper = new BBDD(getContext()) ;
         try
         {
             SQLiteDatabase db = gameDbHelper.getReadableDatabase();

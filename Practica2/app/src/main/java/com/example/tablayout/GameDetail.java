@@ -17,7 +17,6 @@ import android.view.MenuItem;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -49,7 +48,7 @@ public class GameDetail extends AppCompatActivity implements NavigationView.OnNa
         navigationView.setNavigationItemSelectedListener(this);
 
         vehicleId = Integer.valueOf(getIntent().getStringExtra("VEHICLEID"));
-        SQLiteOpenHelper gameDbHelper = new GameDataHelper(this) ;
+        SQLiteOpenHelper gameDbHelper = new BBDD(this) ;
         try {
             SQLiteDatabase db = gameDbHelper.getReadableDatabase();
             Cursor cursor = db.query("VEHICLES",
@@ -75,7 +74,7 @@ public class GameDetail extends AppCompatActivity implements NavigationView.OnNa
 
     @Override
     public void onClick(View v){
-        SQLiteOpenHelper gameDbHelper = new GameDataHelper(this) ;
+        SQLiteOpenHelper gameDbHelper = new BBDD(this) ;
         try{
             ContentValues cv = new ContentValues();
             cv.put("CARRITO", "true");

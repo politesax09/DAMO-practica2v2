@@ -47,7 +47,7 @@ public class ReclamarFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         // Añadir al carrito
-        String[] companyEmail = {"natalia.soroa@live.u-tad.com"};
+        String[] companyEmail = {"ignacio.quintero@live.u-tad.com"};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
         EditText msg = v.findViewById(R.id.editTextTextMultiLine);

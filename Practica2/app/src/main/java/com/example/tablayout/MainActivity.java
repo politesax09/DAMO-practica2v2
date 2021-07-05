@@ -16,13 +16,10 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
-
-import java.util.ResourceBundle;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -81,27 +78,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (id)
         {
             case R.id.navigation_home :
-                Log.d("MENUNAVIGATIONDRAWER", "HOME");
                 m_pager.setCurrentItem(0);
                 m_adapter.notifyDataSetChanged();
                 break;
             case R.id.navigation_ps4 :
-                Log.d("MENUNAVIGATIONDRAWER", "PS4");
                 m_pager.setCurrentItem(1);
                 m_adapter.notifyDataSetChanged();
                 break;
             case R.id.navigation_xbox :
-                Log.d("MENUNAVIGATIONDRAWER", "XBOX");
                 m_pager.setCurrentItem(2);
                 m_adapter.notifyDataSetChanged();
                 break;
             case R.id.navigation_ofertas :
-                Log.d("MENUNAVIGATIONDRAWER", "OFERTAS");
                 m_pager.setCurrentItem(3);
                 m_adapter.notifyDataSetChanged();
                 break;
             case R.id.navigation_novedades :
-                Log.d("MENUNAVIGATIONDRAWER", "NOVEDADES");
                 m_pager.setCurrentItem(4);
                 m_adapter.notifyDataSetChanged();
                 break;
@@ -110,7 +102,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 m_adapter.notifyDataSetChanged();
                 break;
             case R.id.navigation_maps :
-                Log.d("MENUNAVIGATIONDRAWER", "MAPS");
                 Intent intent = new Intent(getApplicationContext(),MapsActivity.class);
                 startActivity(intent);
                 break;
@@ -130,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void onGameClick(View view) {
 
         Intent intent = new Intent(this, GameDetail.class);
-        SQLiteOpenHelper gameDbHelper = new GameDataHelper(this) ;
+        SQLiteOpenHelper gameDbHelper = new BBDD(this) ;
         LinearLayout parent = (LinearLayout) view.getParent();
         String name = ((TextView)parent.findViewById(R.id.Nombre)).getText().toString();
         try

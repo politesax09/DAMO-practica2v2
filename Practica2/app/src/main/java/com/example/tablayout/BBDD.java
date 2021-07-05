@@ -5,12 +5,12 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class GameDataHelper extends SQLiteOpenHelper {
+public class BBDD extends SQLiteOpenHelper {
     private static final String DBNAME = "vehiclesDB";
     private static final int DBVERSION = 2;
 
 
-    public GameDataHelper(Context context) {
+    public BBDD(Context context) {
         super(context, DBNAME, null, DBVERSION);
     }
 

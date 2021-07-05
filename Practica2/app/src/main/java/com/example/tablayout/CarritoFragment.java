@@ -7,7 +7,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 
 import androidx.cursoradapter.widget.SimpleCursorAdapter;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.ListFragment;
 
 import android.view.LayoutInflater;
@@ -15,7 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 
 
 public class CarritoFragment extends ListFragment {
@@ -35,7 +33,7 @@ public class CarritoFragment extends ListFragment {
                 container, false);
 
 
-        SQLiteOpenHelper gameDbHelper = new GameDataHelper(getContext()) ;
+        SQLiteOpenHelper gameDbHelper = new BBDD(getContext()) ;
         SQLiteDatabase db = gameDbHelper.getReadableDatabase();
         Cursor cursor = db.query("VEHICLES",
                 new String[] {"_id", "MODEL","CARRITO","PRECIO"},
@@ -67,7 +65,7 @@ public class CarritoFragment extends ListFragment {
     {
 
         Intent intent = new Intent(getActivity(), GameDetail.class);
-        SQLiteOpenHelper gameDbHelper = new GameDataHelper(getContext()) ;
+        SQLiteOpenHelper gameDbHelper = new BBDD(getContext()) ;
         try
         {
             SQLiteDatabase db = gameDbHelper.getReadableDatabase();
