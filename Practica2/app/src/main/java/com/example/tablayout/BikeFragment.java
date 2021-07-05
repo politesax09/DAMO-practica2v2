@@ -26,7 +26,7 @@ public class BikeFragment extends ListFragment {
         Cursor cursor = db.query("VEHICLES",
                 new String[] {"_id", "MODEL","TYPE","PRECIO"},
                 "TYPE=?",
-                new String[]{"ps4"},
+                new String[]{"bike"},
                 null, null, null);
         SimpleCursorAdapter listAdapter = new SimpleCursorAdapter(
                 getContext(),
