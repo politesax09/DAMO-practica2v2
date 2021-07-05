@@ -27,18 +27,19 @@ public class BBDD extends SQLiteOpenHelper {
                 + "NOVEDADES TEXT,"
                 + "IMAGE_ID INTEGER); ");
 
-        addVehicle (db, "Harley Davison Fat Bob","Harley-Davison", "bike", "1","14.350€", "false", "false", R.mipmap.caca);
-        addVehicle (db, "KTM 1290 Super Duke","KTM", "bike", "1","13.800€", "false", "false", R.mipmap.thewitcher3);
-        addVehicle (db, "Vespa GTS","Vespa-Piaggio","bike", "2","5.799€", "false", "false", R.mipmap.shenmue3);
-        addVehicle (db, "Aprilia RS 660","Aprilia","bike", "2","10.230€", "true", "true",R.mipmap.gta5);
-        addVehicle(db,"Triumph Speed Triple 1050 RS","Triumph","bike","2","16.272€", "true","true",R.mipmap.godofwar);
-        addVehicle(db,"BMW M 1000 RR","BMW","bike","2","17.490€", "false", "false", R.mipmap.cyberpunk);
-        addVehicle (db, "BMW Serie 5","BMW", "car","2","12.580€", "false","true", R.mipmap.village);
-        addVehicle (db, "Toyota Yaris","Toyota", "car", "1","9.520€", "false", "false",R.mipmap.outcast2);
-        addVehicle (db, "SEAT Leon","SEAT", "car", "1","4.660€", "false", "true", R.mipmap.gears5);
-        addVehicle (db, "Peugeot 306","Peugeot", "car", "2","5.572€", "false", "true",R.mipmap.doom);
-        addVehicle (db, "Volkswagen Bettle","Volkswagen","car", "2","15.125€", "false", "true", R.mipmap.callofduty4);
-        addVehicle (db, "Ford Focus Mk4","Ford","car", "1","21.230€", "false", "true",R.mipmap.farcry);
+//        TODO: Meter o quitar alguno mas
+        addVehicle (db, "Harley Davison Fat Bob","Harley-Davison", "bike", "1","14.350€", "false", "false", R.mipmap.harley_davison_fat_bob);
+        addVehicle (db, "KTM 1290 Super Duke","KTM", "bike", "1","13.800€", "false", "false", R.mipmap.ktm_1290_super_duke);
+        addVehicle (db, "Vespa GTS","Vespa-Piaggio","bike", "2","5.799€", "false", "false", R.mipmap.vespa_gts);
+        addVehicle (db, "Aprilia RS 660","Aprilia","bike", "2","10.230€", "true", "true",R.mipmap.aprilia_rs_660);
+        addVehicle(db,"Triumph Speed Triple 1050 RS","Triumph","bike","2","16.272€", "true","true",R.mipmap.triumph_speed_triple_1050_rs);
+        addVehicle(db,"BMW M 1000 RR","BMW","bike","2","17.490€", "false", "false", R.mipmap.bmw_m1000rr);
+        addVehicle (db, "BMW Serie 5","BMW", "car","2","12.580€", "false","true", R.mipmap.bmw_serie5);
+        addVehicle (db, "Toyota Yaris","Toyota", "car", "1","9.520€", "false", "false",R.mipmap.toyota_yaris);
+        addVehicle (db, "SEAT Leon","SEAT", "car", "1","4.660€", "false", "true", R.mipmap.seat_leon);
+        addVehicle (db, "Peugeot 306","Peugeot", "car", "2","5.572€", "false", "true",R.mipmap.peugeot_306);
+        addVehicle (db, "Volkswagen Beettle","Volkswagen","car", "2","15.125€", "false", "true", R.mipmap.volkswagen_beettle);
+        addVehicle (db, "Ford Focus Mk4","Ford","car", "1","21.230€", "false", "true",R.mipmap.ford_focus);
 
     }
 
