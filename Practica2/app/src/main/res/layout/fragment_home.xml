@@ -71,7 +71,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="PS4"
+                        android:text="@string/bike_tab"
                         android:textSize="25dp" />
                     <fragment
                         android:id="@+id/fragment11"
@@ -91,7 +91,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="XBOX"
+                        android:text="@string/car_tab"
                         android:textSize="25dp" />
                     <fragment
                         android:id="@+id/fragment12"
