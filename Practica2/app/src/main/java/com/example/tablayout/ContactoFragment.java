@@ -16,8 +16,6 @@ import android.widget.Toast;
 
 public class ContactoFragment extends Fragment implements View.OnClickListener{
 
-
-
     public ContactoFragment() {
         // Required empty public constructor
 
@@ -58,8 +56,6 @@ public class ContactoFragment extends Fragment implements View.OnClickListener{
 
         EditText msg = getView().findViewById(R.id.editTextTextMultiLine);
         String message = msg.getText().toString();
-
-
 
         emailIntent.putExtra(Intent.EXTRA_EMAIL,companyEmail);
         emailIntent.putExtra(Intent.EXTRA_REFERRER_NAME,name);

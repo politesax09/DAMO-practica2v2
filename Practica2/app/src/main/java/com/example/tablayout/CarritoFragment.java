@@ -18,12 +18,9 @@ import android.widget.ListView;
 
 public class CarritoFragment extends ListFragment {
 
-
     public CarritoFragment() {
         // Required empty public constructor
     }
-
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,7 +28,6 @@ public class CarritoFragment extends ListFragment {
 
         View view = inflater.inflate(R.layout.fragment_carrito,
                 container, false);
-
 
         SQLiteOpenHelper gameDbHelper = new BBDD(getContext()) ;
         SQLiteDatabase db = gameDbHelper.getReadableDatabase();
@@ -61,13 +57,11 @@ public class CarritoFragment extends ListFragment {
     }
 
     @Override
-    public void onListItemClick(ListView l, View v, int position, long id)
-    {
+    public void onListItemClick(ListView l, View v, int position, long id) {
 
-        Intent intent = new Intent(getActivity(), GameDetail.class);
+        Intent intent = new Intent(getActivity(), VehicleDetail.class);
         SQLiteOpenHelper gameDbHelper = new BBDD(getContext()) ;
-        try
-        {
+        try {
             SQLiteDatabase db = gameDbHelper.getReadableDatabase();
             Cursor cursor = db.query("VEHICLES",
                     new String[] {"_id", "MODEL","TYPE"},
@@ -80,8 +74,5 @@ public class CarritoFragment extends ListFragment {
         }
         catch (Exception e) {
         }
-
     }
-
-
 }

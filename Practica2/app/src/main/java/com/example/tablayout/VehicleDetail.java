@@ -22,7 +22,7 @@ import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class GameDetail extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener  {
+public class VehicleDetail extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener  {
     int vehicleId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,12 +92,10 @@ public class GameDetail extends AppCompatActivity implements NavigationView.OnNa
     public void onBackPressed()
     {
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.GameDetail_drawer_layout);
-        if (drawerLayout.isDrawerOpen(GravityCompat.START))
-        {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         }
-        else
-        {
+        else {
             super.onBackPressed();
         }
     }
@@ -106,8 +104,7 @@ public class GameDetail extends AppCompatActivity implements NavigationView.OnNa
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id = menuItem.getItemId();
         Intent intent = null;
-        switch (id)
-        {
+        switch (id) {
             case R.id.navigation_home :
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);

@@ -38,7 +38,6 @@ public class CategoriesAdapter extends FragmentPagerAdapter {
                 return m_context.getResources().getText(R.string.novedades_tab);
             case 5:
                 return m_context.getResources().getText(R.string.carrito_tab);
-
         }
         return null;
     }
@@ -51,17 +50,15 @@ public class CategoriesAdapter extends FragmentPagerAdapter {
             case 0:
                 return new HomeFragment();
             case 1:
-                return new PS4Fragment();
+                return new BikeFragment();
             case 2:
-                return new XboxFragment();
+                return new CarFragment();
             case 3:
                 return new OfertasFragment();
             case 4:
                 return new NovedadesFragment();
             case 5:
                 return new CarritoFragment();
-
-
         }
         return null;
     }

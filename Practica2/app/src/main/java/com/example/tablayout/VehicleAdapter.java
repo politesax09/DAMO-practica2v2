@@ -7,9 +7,9 @@ import android.widget.ResourceCursorAdapter;
 import android.widget.TextView;
 
 
-public class GameAdapter extends ResourceCursorAdapter
+public class VehicleAdapter extends ResourceCursorAdapter
 {
-    public GameAdapter(Context context, int layout, Cursor cursor, int flags) {
+    public VehicleAdapter(Context context, int layout, Cursor cursor, int flags) {
         super(context, layout, cursor, flags);
     }
     @Override

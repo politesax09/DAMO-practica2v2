@@ -61,12 +61,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void onBackPressed()
     {
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout);
-        if (drawerLayout.isDrawerOpen(GravityCompat.START))
-        {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         }
-        else
-        {
+        else {
             super.onBackPressed();
         }
     }
@@ -75,8 +73,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
     {
         int id = menuItem.getItemId();
-        switch (id)
-        {
+        switch (id) {
             case R.id.navigation_home :
                 m_pager.setCurrentItem(0);
                 m_adapter.notifyDataSetChanged();
@@ -119,13 +116,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void onGameClick(View view) {
-
-        Intent intent = new Intent(this, GameDetail.class);
+        Intent intent = new Intent(this, VehicleDetail.class);
         SQLiteOpenHelper gameDbHelper = new BBDD(this) ;
         LinearLayout parent = (LinearLayout) view.getParent();
         String name = ((TextView)parent.findViewById(R.id.Nombre)).getText().toString();
-        try
-        {
+        try {
             SQLiteDatabase db = gameDbHelper.getReadableDatabase();
             Cursor cursor = db.query("VEHICLES",
                     new String[] {"_id", "MODEL","TYPE"},

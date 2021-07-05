@@ -75,7 +75,7 @@
                         android:textSize="25dp" />
                     <fragment
                         android:id="@+id/fragment11"
-                        android:name="com.example.tablayout.PS4Fragment"
+                        android:name="com.example.tablayout.BikeFragment"
                         android:layout_width="match_parent"
                         android:layout_height="140dp" />
 
@@ -95,7 +95,7 @@
                         android:textSize="25dp" />
                     <fragment
                         android:id="@+id/fragment12"
-                        android:name="com.example.tablayout.XboxFragment"
+                        android:name="com.example.tablayout.CarFragment"
                         android:layout_width="match_parent"
                         android:layout_height="140dp" />
 

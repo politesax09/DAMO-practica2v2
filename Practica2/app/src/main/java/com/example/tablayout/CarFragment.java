@@ -13,9 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class XboxFragment extends ListFragment {
+public class CarFragment extends ListFragment {
 
-    public XboxFragment() {
+    public CarFragment() {
         // Required empty public constructor
     }
 
@@ -41,6 +41,4 @@ public class XboxFragment extends ListFragment {
       // Inflate the layout for this fragment
       return inflater.inflate(R.layout.fragment_xbox, container, false);
   }
-
-
 }

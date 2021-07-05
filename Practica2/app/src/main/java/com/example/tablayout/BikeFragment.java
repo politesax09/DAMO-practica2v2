@@ -12,9 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class PS4Fragment extends ListFragment {
+public class BikeFragment extends ListFragment {
 
-    public PS4Fragment() {
+    public BikeFragment() {
         // Required empty public constructor
     }
 
@@ -39,7 +39,4 @@ public class PS4Fragment extends ListFragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_p_s4, container, false);
     }
-
-
-
 }
