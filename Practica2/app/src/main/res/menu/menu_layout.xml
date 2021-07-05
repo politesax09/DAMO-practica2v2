@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <item
+        android:id="@+id/button_carro"
+        android:icon="@drawable/ic_shopping_cart_black_35dp"
+        android:title=""
+        android:layout_weight="0"
+        android:foregroundGravity="right"
+        app:showAsAction="always"/>
+
+</menu>

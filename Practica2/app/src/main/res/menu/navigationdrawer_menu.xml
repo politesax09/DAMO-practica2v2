@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@android:drawable/btn_star"
+            android:title="@string/nd_home"
+            android:checked="true"/>
+        <item
+            android:id="@+id/navigation_novedades"
+            android:icon="@android:drawable/btn_star"
+            android:title="@string/novedades_tab" />
+        <item
+            android:id="@+id/navigation_ofertas"
+            android:icon="@android:drawable/btn_plus"
+            android:title="@string/ofertas_tab" />
+        <item
+            android:id="@+id/navigation_ps4"
+            android:icon="@android:drawable/ic_media_play"
+            android:title="@string/ps4_tab"/>
+        <item
+            android:id="@+id/navigation_xbox"
+            android:icon="@android:drawable/ic_media_play"
+            android:title="@string/xbox_tab"/>
+        <item
+            android:id="@+id/navigation_maps"
+            android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="@string/map_tab"/>
+        <item
+            android:id="@+id/navigation_contacto"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="@string/contacto_tab"/>
+        <item
+            android:id="@+id/navigation_carrito"
+            android:icon="@drawable/ic_shopping_cart_black_35dp"
+            android:title="@string/carrito_tab"/>
+
+
+    </group>
+
+</menu>

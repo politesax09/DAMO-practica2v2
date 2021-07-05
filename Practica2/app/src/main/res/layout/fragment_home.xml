@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Novedades"
+                        android:textSize="25dp" />
+                    <fragment
+                        android:id="@+id/fragment9"
+                        android:name="com.example.tablayout.NovedadesFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Ofertas"
+                        android:textSize="25dp" />
+                    <fragment
+                        android:id="@+id/fragment10"
+                        android:name="com.example.tablayout.OfertasFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="PS4"
+                        android:textSize="25dp" />
+                    <fragment
+                        android:id="@+id/fragment11"
+                        android:name="com.example.tablayout.PS4Fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="XBOX"
+                        android:textSize="25dp" />
+                    <fragment
+                        android:id="@+id/fragment12"
+                        android:name="com.example.tablayout.XboxFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp" />
+
+                  
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
