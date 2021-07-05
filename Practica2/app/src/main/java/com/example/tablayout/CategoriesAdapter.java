@@ -29,9 +29,9 @@ public class CategoriesAdapter extends FragmentPagerAdapter {
             case 0:
                 return m_context.getResources().getText(R.string.home_tab);
             case 1:
-                return m_context.getResources().getText(R.string.ps4_tab);
+                return m_context.getResources().getText(R.string.bike_tab);
             case 2:
-                return m_context.getResources().getText(R.string.xbox_tab);
+                return m_context.getResources().getText(R.string.car_tab);
             case 3:
                 return m_context.getResources().getText(R.string.ofertas_tab);
             case 4:

@@ -27,7 +27,7 @@ public class BBDD extends SQLiteOpenHelper {
                 + "NOVEDADES TEXT,"
                 + "IMAGE_ID INTEGER); ");
 
-        addVehicle (db, "FIFA19","APPEAL", "bike", "1","46€", "false", "false", R.mipmap.caca);
+        addVehicle (db, "DUKE 125","KTM", "bike", "1","4600€", "false", "false", R.mipmap.caca);
         addVehicle (db, "The Witcher 3","APPEAL", "bike", "1","54.6€", "false", "false", R.mipmap.thewitcher3);
         addVehicle (db, "SHENMUE","SEGA","bike", "2","460€", "false", "false", R.mipmap.shenmue3);
         addVehicle (db, "GTA 5","LEVEL5","bike", "2","468€", "true", "true",R.mipmap.gta5);
