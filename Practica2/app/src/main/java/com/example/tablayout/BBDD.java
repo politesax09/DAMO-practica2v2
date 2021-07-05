@@ -27,18 +27,18 @@ public class BBDD extends SQLiteOpenHelper {
                 + "NOVEDADES TEXT,"
                 + "IMAGE_ID INTEGER); ");
 
-        addVehicle (db, "DUKE 125","KTM", "bike", "1","4600€", "false", "false", R.mipmap.caca);
-        addVehicle (db, "The Witcher 3","APPEAL", "bike", "1","54.6€", "false", "false", R.mipmap.thewitcher3);
-        addVehicle (db, "SHENMUE","SEGA","bike", "2","460€", "false", "false", R.mipmap.shenmue3);
-        addVehicle (db, "GTA 5","LEVEL5","bike", "2","468€", "true", "true",R.mipmap.gta5);
-        addVehicle(db,"God of war","shdjhdjsh","bike","2","463€", "true","true",R.mipmap.godofwar);
-        addVehicle(db,"CyberPunk","holiwi","bike","2","462€", "false", "false", R.mipmap.cyberpunk);
-        addVehicle (db, "Village","APPEAL", "car","2","461€", "false","true", R.mipmap.village);
-        addVehicle (db, "OUTCAST","APPEAL", "car", "1","444€", "false", "false",R.mipmap.outcast2);
-        addVehicle (db, "Gears 5","APPEAL", "car", "1","456€", "false", "true", R.mipmap.gears5);
-        addVehicle (db, "DOOM","APPEAL", "car", "2","466€", "false", "true",R.mipmap.doom);
-        addVehicle (db, "CALL OF DUTY 4","SEGA","car", "2","426€", "false", "true", R.mipmap.callofduty4);
-        addVehicle (db, "FAR CRY","SEGA","car", "1","46€", "false", "true",R.mipmap.farcry);
+        addVehicle (db, "Harley Davison Fat Bob","Harley-Davison", "bike", "1","14.350€", "false", "false", R.mipmap.caca);
+        addVehicle (db, "KTM 1290 Super Duke","KTM", "bike", "1","13.800€", "false", "false", R.mipmap.thewitcher3);
+        addVehicle (db, "Vespa GTS","Vespa-Piaggio","bike", "2","5.799€", "false", "false", R.mipmap.shenmue3);
+        addVehicle (db, "Aprilia RS 660","Aprilia","bike", "2","10.230€", "true", "true",R.mipmap.gta5);
+        addVehicle(db,"Triumph Speed Triple 1050 RS","Triumph","bike","2","16.272€", "true","true",R.mipmap.godofwar);
+        addVehicle(db,"BMW M 1000 RR","BMW","bike","2","17.490€", "false", "false", R.mipmap.cyberpunk);
+        addVehicle (db, "BMW Serie 5","BMW", "car","2","12.580€", "false","true", R.mipmap.village);
+        addVehicle (db, "Toyota Yaris","Toyota", "car", "1","9.520€", "false", "false",R.mipmap.outcast2);
+        addVehicle (db, "SEAT Leon","SEAT", "car", "1","4.660€", "false", "true", R.mipmap.gears5);
+        addVehicle (db, "Peugeot 306","Peugeot", "car", "2","5.572€", "false", "true",R.mipmap.doom);
+        addVehicle (db, "Volkswagen Bettle","Volkswagen","car", "2","15.125€", "false", "true", R.mipmap.callofduty4);
+        addVehicle (db, "Ford Focus Mk4","Ford","car", "1","21.230€", "false", "true",R.mipmap.farcry);
 
     }
 
