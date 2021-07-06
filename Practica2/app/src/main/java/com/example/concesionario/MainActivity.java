@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     ViewPager         m_pager;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) { //Define elementos
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {  //Navega por actividades al pulsar un elemento del menu
         int id = menuItem.getItemId();
         switch (id) {
             case R.id.navHome:
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-    public void onGameClick(View view) {
+    public void onVehicleClick(View view) { //Al pulsar un vehicle del home te redirige a los detalles de este
         Intent intent = new Intent(this, VehicleDetailActivity.class);
         SQLiteOpenHelper gameDbHelper = new BBDD(this) ;
         LinearLayout parent = (LinearLayout) view.getParent();

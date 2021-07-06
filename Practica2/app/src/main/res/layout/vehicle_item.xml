@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:onClick="onGameClick"
+    android:onClick="onVehicleClick"
     android:paddingLeft="24dp">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textSize="22sp"
         android:text="TextView"
-        android:onClick="onGameClick"/>
+        android:onClick="onVehicleClick"/>
 
     <TextView
         android:id="@+id/itemPriceTextView"
@@ -24,7 +24,7 @@
         android:textSize="22sp"
 
         android:text="TextView"
-        android:onClick="onGameClick"
+        android:onClick="onVehicleClick"
         />
 
     <ImageView

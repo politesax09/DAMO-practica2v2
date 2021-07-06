@@ -59,7 +59,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng spain = new LatLng(39.3260685, -4.8379791);
+        LatLng spain = new LatLng(39.3260485, -4.8379791);
         mMap.addMarker(new MarkerOptions().position(spain).title("Marker in SPAIN").snippet("Calle tutor"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(spain));
     }

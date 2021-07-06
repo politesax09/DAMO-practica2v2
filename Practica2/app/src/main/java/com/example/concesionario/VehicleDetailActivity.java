@@ -69,7 +69,7 @@ public class VehicleDetailActivity extends AppCompatActivity implements Navigati
     }
 
     @Override
-    public void onClick(View v){
+    public void onClick(View v){ //Añadir al carrito
         SQLiteOpenHelper gameDbHelper = new BBDD(this) ;
         try{
             ContentValues cv = new ContentValues();

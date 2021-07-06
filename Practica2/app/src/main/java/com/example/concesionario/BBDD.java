@@ -15,7 +15,7 @@ public class BBDD extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
+    public void onCreate(SQLiteDatabase db) { //Crear tabla y rellenarla
         db.execSQL("CREATE TABLE VEHICLES ("
                 + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + "MODEL TEXT, "
@@ -46,7 +46,7 @@ public class BBDD extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {}
 
-
+    //Función para rellenar la bbdd
     public static void addVehicle (SQLiteDatabase db, String model, String company,String type,String oferta,String precio,String seleccionado,String novedades, int imageID) {
         ContentValues vehiclesData = new ContentValues();
         vehiclesData.put("MODEL", model);
