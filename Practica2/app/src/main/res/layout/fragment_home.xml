@@ -35,7 +35,7 @@
                         android:textSize="25dp" />
                     <fragment
                         android:id="@+id/fragment9"
-                        android:name="com.example.tablayout.NovedadesFragment"
+                        android:name="com.example.concesionario.NovedadesFragment"
                         android:layout_width="match_parent"
                         android:layout_height="140dp" />
 
@@ -55,7 +55,7 @@
                         android:textSize="25dp" />
                     <fragment
                         android:id="@+id/fragment10"
-                        android:name="com.example.tablayout.OfertasFragment"
+                        android:name="com.example.concesionario.OfertasFragment"
                         android:layout_width="match_parent"
                         android:layout_height="140dp" />
 
@@ -75,7 +75,7 @@
                         android:textSize="25dp" />
                     <fragment
                         android:id="@+id/fragment11"
-                        android:name="com.example.tablayout.BikeFragment"
+                        android:name="com.example.concesionario.BikeFragment"
                         android:layout_width="match_parent"
                         android:layout_height="140dp" />
 
@@ -95,7 +95,7 @@
                         android:textSize="25dp" />
                     <fragment
                         android:id="@+id/fragment12"
-                        android:name="com.example.tablayout.CarFragment"
+                        android:name="com.example.concesionario.CarFragment"
                         android:layout_width="match_parent"
                         android:layout_height="140dp" />
 

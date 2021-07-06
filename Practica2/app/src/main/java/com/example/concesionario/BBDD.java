@@ -1,4 +1,4 @@
-package com.example.tablayout;
+package com.example.concesionario;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -27,7 +27,6 @@ public class BBDD extends SQLiteOpenHelper {
                 + "NOVEDADES TEXT,"
                 + "IMAGE_ID INTEGER); ");
 
-//        TODO: Meter o quitar alguno mas
         addVehicle (db, "Harley Davison Fat Bob","Harley-Davison", "bike", "1","14.350€", "false", "false", R.mipmap.harley_davison_fat_bob);
         addVehicle (db, "KTM 1290 Super Duke","KTM", "bike", "1","13.800€", "false", "false", R.mipmap.ktm_1290_super_duke);
         addVehicle (db, "Vespa GTS","Vespa-Piaggio","bike", "2","5.799€", "false", "false", R.mipmap.vespa_gts);
@@ -40,9 +39,12 @@ public class BBDD extends SQLiteOpenHelper {
         addVehicle (db, "Peugeot 306","Peugeot", "car", "2","5.572€", "false", "true",R.mipmap.peugeot_306);
         addVehicle (db, "Volkswagen Beettle","Volkswagen","car", "2","15.125€", "false", "true", R.mipmap.volkswagen_beettle);
         addVehicle (db, "Ford Focus Mk4","Ford","car", "1","21.230€", "false", "true",R.mipmap.ford_focus);
-
+        addVehicle (db, "Renault Megane RS Trophy","Renault","car", "1","45.770€", "false", "true",R.mipmap.renault_megane);
+        addVehicle (db, "Mitsubishi Lancer EVO V","Mitsubishi","car", "1","11.350€", "false", "true",R.mipmap.mitsubishi_evo);
     }
 
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {}
 
 
     public static void addVehicle (SQLiteDatabase db, String model, String company,String type,String oferta,String precio,String seleccionado,String novedades, int imageID) {
@@ -58,6 +60,5 @@ public class BBDD extends SQLiteOpenHelper {
         db.insert("VEHICLES", null, vehiclesData);
     }
 
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {}
+
 }

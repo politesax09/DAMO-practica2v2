@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tablayout">
+    package="com.example.concesionario">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -16,18 +16,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tablayout">
         <activity
-            android:name=".ContactoActivity"
+            android:name="com.example.concesionario.ContactoActivity"
             android:label="@string/title_activity_contacto"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
         <activity
-            android:name=".MapsActivity"
+            android:name="com.example.concesionario.MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".VehicleDetailActivity"
+            android:name="com.example.concesionario.VehicleDetailActivity"
             android:label="@string/title_activity_detail"/>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.concesionario.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
