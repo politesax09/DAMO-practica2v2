@@ -38,13 +38,13 @@ public class CarritoFragment extends ListFragment {
                 null, null, null);
         SimpleCursorAdapter listAdapter = new SimpleCursorAdapter(
                 getContext(),
-                R.layout.gameitem,
+                R.layout.vehicle_item,
                 cursor,
                 new String[]{"MODEL","PRECIO"},
-                new int[] {R.id.Nombre,R.id.Precio},
+                new int[] {R.id.itemModelTextView,R.id.itemPriceTextView},
                 0);
         setListAdapter(listAdapter);
-        Button button = (Button) view.findViewById(R.id.btn_COMPRAR);
+        Button button = (Button) view.findViewById(R.id.finishButton);
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -59,7 +59,7 @@ public class CarritoFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
 
-        Intent intent = new Intent(getActivity(), VehicleDetail.class);
+        Intent intent = new Intent(getActivity(), VehicleDetailActivity.class);
         SQLiteOpenHelper gameDbHelper = new BBDD(getContext()) ;
         try {
             SQLiteDatabase db = gameDbHelper.getReadableDatabase();

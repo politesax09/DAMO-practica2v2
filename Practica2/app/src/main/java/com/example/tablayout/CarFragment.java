@@ -32,13 +32,13 @@ public class CarFragment extends ListFragment {
               null, null, null);
       SimpleCursorAdapter listAdapter = new SimpleCursorAdapter(
               getContext(),
-              R.layout.gameitem,
+              R.layout.vehicle_item,
               cursor,
               new String[]{"MODEL","PRECIO"},
-              new int[] {R.id.Nombre,R.id.Precio},
+              new int[] {R.id.itemModelTextView,R.id.itemPriceTextView},
               0);
       setListAdapter(listAdapter);
       // Inflate the layout for this fragment
-      return inflater.inflate(R.layout.fragment_xbox, container, false);
+      return inflater.inflate(R.layout.fragment_car, container, false);
   }
 }

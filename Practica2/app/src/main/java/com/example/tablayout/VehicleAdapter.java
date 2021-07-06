@@ -14,10 +14,10 @@ public class VehicleAdapter extends ResourceCursorAdapter
     }
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
-        TextView name = (TextView) view.findViewById(R.id.Nombre);
+        TextView name = (TextView) view.findViewById(R.id.itemModelTextView);
         name.setText(cursor.getString(cursor.getColumnIndex("MODEL")));
 
-        TextView price = (TextView) view.findViewById(R.id.Precio);
+        TextView price = (TextView) view.findViewById(R.id.itemPriceTextView);
         price.setText(cursor.getString(cursor.getColumnIndex("PRECIO")));
 
 

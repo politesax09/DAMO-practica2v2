@@ -74,35 +74,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     {
         int id = menuItem.getItemId();
         switch (id) {
-            case R.id.navigation_home :
+            case R.id.navHome:
                 m_pager.setCurrentItem(0);
                 m_adapter.notifyDataSetChanged();
                 break;
-            case R.id.navigation_ps4 :
+            case R.id.navBikes:
                 m_pager.setCurrentItem(1);
                 m_adapter.notifyDataSetChanged();
                 break;
-            case R.id.navigation_xbox :
+            case R.id.navCars:
                 m_pager.setCurrentItem(2);
                 m_adapter.notifyDataSetChanged();
                 break;
-            case R.id.navigation_ofertas :
+            case R.id.navOfertas:
                 m_pager.setCurrentItem(3);
                 m_adapter.notifyDataSetChanged();
                 break;
-            case R.id.navigation_novedades :
+            case R.id.navNovedades:
                 m_pager.setCurrentItem(4);
                 m_adapter.notifyDataSetChanged();
                 break;
-            case R.id.navigation_carrito:
+            case R.id.navCompra:
                 m_pager.setCurrentItem(5);
                 m_adapter.notifyDataSetChanged();
                 break;
-            case R.id.navigation_maps :
+            case R.id.navMap:
                 Intent intent = new Intent(getApplicationContext(),MapsActivity.class);
                 startActivity(intent);
                 break;
-             case R.id.navigation_contacto :
+             case R.id.navContact:
                 Intent contacto = new Intent(getApplicationContext(), Contacto.class);
                 contacto.putExtra("section", "contacto");
                 startActivity(contacto);
@@ -116,10 +116,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void onGameClick(View view) {
-        Intent intent = new Intent(this, VehicleDetail.class);
+        Intent intent = new Intent(this, VehicleDetailActivity.class);
         SQLiteOpenHelper gameDbHelper = new BBDD(this) ;
         LinearLayout parent = (LinearLayout) view.getParent();
-        String name = ((TextView)parent.findViewById(R.id.Nombre)).getText().toString();
+        String name = ((TextView)parent.findViewById(R.id.itemModelTextView)).getText().toString();
         try {
             SQLiteDatabase db = gameDbHelper.getReadableDatabase();
             Cursor cursor = db.query("VEHICLES",

@@ -34,10 +34,10 @@ public class NovedadesFragment extends ListFragment {
                 null, null, null);
         SimpleCursorAdapter listAdapter = new SimpleCursorAdapter(
                 getContext(),
-                R.layout.gameitem,
+                R.layout.vehicle_item,
                 cursor,
                 new String[]{"MODEL","PRECIO"},
-                new int[] {R.id.Nombre,R.id.Precio},
+                new int[] {R.id.itemModelTextView,R.id.itemPriceTextView},
                 0);
         setListAdapter(listAdapter);
         return inflater.inflate(R.layout.fragment_novedades, container, false);

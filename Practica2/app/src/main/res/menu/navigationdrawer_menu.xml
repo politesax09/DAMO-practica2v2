@@ -5,36 +5,36 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/navigation_home"
+            android:id="@+id/navHome"
             android:icon="@android:drawable/btn_star"
             android:title="@string/nd_home"
             android:checked="true"/>
         <item
-            android:id="@+id/navigation_novedades"
+            android:id="@+id/navNovedades"
             android:icon="@android:drawable/btn_star"
             android:title="@string/novedades_tab" />
         <item
-            android:id="@+id/navigation_ofertas"
+            android:id="@+id/navOfertas"
             android:icon="@android:drawable/btn_plus"
             android:title="@string/ofertas_tab" />
         <item
-            android:id="@+id/navigation_ps4"
+            android:id="@+id/navBikes"
             android:icon="@android:drawable/ic_media_play"
             android:title="@string/bike_tab"/>
         <item
-            android:id="@+id/navigation_xbox"
+            android:id="@+id/navCars"
             android:icon="@android:drawable/ic_media_play"
             android:title="@string/car_tab"/>
         <item
-            android:id="@+id/navigation_maps"
+            android:id="@+id/navMap"
             android:icon="@android:drawable/ic_menu_mapmode"
             android:title="@string/map_tab"/>
         <item
-            android:id="@+id/navigation_contacto"
+            android:id="@+id/navContact"
             android:icon="@android:drawable/ic_menu_agenda"
             android:title="@string/contacto_tab"/>
         <item
-            android:id="@+id/navigation_carrito"
+            android:id="@+id/navCompra"
             android:icon="@drawable/ic_shopping_cart_black_35dp"
             android:title="@string/carrito_tab"/>
 

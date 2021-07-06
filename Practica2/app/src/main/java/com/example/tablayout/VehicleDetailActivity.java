@@ -22,12 +22,12 @@ import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class VehicleDetail extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener  {
+public class VehicleDetailActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener  {
     int vehicleId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_detail);
+        setContentView(R.layout.activity_vehicle_detail);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -58,12 +58,12 @@ public class VehicleDetail extends AppCompatActivity implements NavigationView.O
                     null, null, null);
             cursor.moveToFirst();
             vehicleId = cursor.getInt(0);
-            ((TextView)findViewById(R.id.videogameName)).setText(cursor.getString(1));
-            ((TextView)findViewById(R.id.companyName)).setText(cursor.getString(2));
-            ((TextView)findViewById(R.id.gamePrecio)).setText(cursor.getString(4));
-            ((ImageView)findViewById(R.id.gameImage)).setImageResource(cursor.getInt(5));
+            ((TextView)findViewById(R.id.modelTextView)).setText(cursor.getString(1));
+            ((TextView)findViewById(R.id.brandTextView)).setText(cursor.getString(2));
+            ((TextView)findViewById(R.id.priceTextView)).setText(cursor.getString(4));
+            ((ImageView)findViewById(R.id.imageView)).setImageResource(cursor.getInt(5));
 
-            Button button = findViewById(R.id.button_carrito);
+            Button button = findViewById(R.id.buyButton);
             button.setOnClickListener(this);
 
         }
@@ -79,7 +79,7 @@ public class VehicleDetail extends AppCompatActivity implements NavigationView.O
             ContentValues cv = new ContentValues();
             cv.put("CARRITO", "true");
             SQLiteDatabase db = gameDbHelper.getReadableDatabase();
-            db.update("VEHICLES", cv, "MODEL=?", new String[]{((TextView)findViewById(R.id.videogameName)).getText().toString()});
+            db.update("VEHICLES", cv, "MODEL=?", new String[]{((TextView)findViewById(R.id.modelTextView)).getText().toString()});
             Log.d("Contenido", "updateado");
         }
         catch (Exception e){
@@ -105,31 +105,31 @@ public class VehicleDetail extends AppCompatActivity implements NavigationView.O
         int id = menuItem.getItemId();
         Intent intent = null;
         switch (id) {
-            case R.id.navigation_home :
+            case R.id.navHome:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_ps4 :
+            case R.id.navBikes:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_xbox :
+            case R.id.navCars:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_ofertas :
+            case R.id.navOfertas:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_novedades :
+            case R.id.navNovedades:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_maps :
+            case R.id.navMap:
                 intent = new Intent(getApplicationContext(),MapsActivity.class);
                 startActivity(intent);
                 break;
-             case R.id.navigation_contacto :
+             case R.id.navContact:
                 intent = new Intent(getApplicationContext(), Contacto.class);
                 intent.putExtra("section", "contacto");
                 startActivity(intent);

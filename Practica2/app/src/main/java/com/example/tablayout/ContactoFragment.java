@@ -10,9 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class ContactoFragment extends Fragment implements View.OnClickListener{
 
@@ -28,7 +25,7 @@ public class ContactoFragment extends Fragment implements View.OnClickListener{
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_contacto, container, false);
 
-        Button button = view.findViewById(R.id.button_enviar);
+        Button button = view.findViewById(R.id.sendButton);
         button.setOnClickListener(this);
 
         return view;
@@ -47,14 +44,14 @@ public class ContactoFragment extends Fragment implements View.OnClickListener{
         String[] companyEmail = {"nacho.q.g.2000@gmail.com"};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
-        EditText na = getView().findViewById(R.id.editTextTextPersonName);
+        EditText na = getView().findViewById(R.id.nameEditText);
         System.out.println(na);
         String name = na.getText().toString();
 
-        EditText em = getView().findViewById(R.id.editTextTextEmailAddress);
+        EditText em = getView().findViewById(R.id.mailEditText);
         String email = em.getText().toString();
 
-        EditText msg = getView().findViewById(R.id.editTextTextMultiLine);
+        EditText msg = getView().findViewById(R.id.issueEditText);
         String message = msg.getText().toString();
 
         emailIntent.putExtra(Intent.EXTRA_EMAIL,companyEmail);

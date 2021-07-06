@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/GameDetail_drawer_layout"
-    tools:context=".VehicleDetail">
+    tools:context=".VehicleDetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/videogameName"
+            android:id="@+id/modelTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="200px"
@@ -44,24 +44,24 @@
             android:text="TextView" />
 
         <TextView
-            android:id="@+id/companyName"
+            android:id="@+id/brandTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
         <TextView
-            android:id="@+id/gamePrecio"
+            android:id="@+id/priceTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
 
         <ImageView
-            android:id="@+id/gameImage"
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_launcher_foreground" />
 
         <Button
-            android:id="@+id/button_carrito"
+            android:id="@+id/buyButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
@@ -76,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:headerLayout="@layout/navigationdrawer_top"
+        app:headerLayout="@layout/navigation_drawer"
         app:menu="@menu/navigationdrawer_menu">
     </com.google.android.material.navigation.NavigationView>
 

@@ -6,12 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -20,9 +18,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.example.tablayout.databinding.ActivityMapsBinding;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.tabs.TabLayout;
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback, NavigationView.OnNavigationItemSelectedListener {
 
@@ -87,31 +83,31 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         Intent intent = null;
         switch (id)
         {
-            case R.id.navigation_home :
+            case R.id.navHome:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_ps4 :
+            case R.id.navBikes:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_xbox :
+            case R.id.navCars:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_ofertas :
+            case R.id.navOfertas:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_novedades :
+            case R.id.navNovedades:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_maps :
+            case R.id.navMap:
                 intent = new Intent(getApplicationContext(),MapsActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_contacto :
+            case R.id.navContact:
                 intent = new Intent(getApplicationContext(), Contacto.class);
                 intent.putExtra("section", "contacto");
                 startActivity(intent);

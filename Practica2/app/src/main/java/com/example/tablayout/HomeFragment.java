@@ -27,7 +27,7 @@ public class HomeFragment extends ListFragment {
 
     public void onListItemClick(ListView l, View v, int position, long id)
     {
-        Intent intent = new Intent(getActivity(), VehicleDetail.class);
+        Intent intent = new Intent(getActivity(), VehicleDetailActivity.class);
         SQLiteOpenHelper gameDbHelper = new BBDD(getContext()) ;
         try
         {

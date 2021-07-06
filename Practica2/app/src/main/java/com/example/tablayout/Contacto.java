@@ -1,12 +1,7 @@
 package com.example.tablayout;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -78,31 +73,31 @@ public class Contacto extends AppCompatActivity implements NavigationView.OnNavi
         Intent intent = null;
         switch (id)
         {
-            case R.id.navigation_home :
+            case R.id.navHome:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_ps4 :
+            case R.id.navBikes:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_xbox :
+            case R.id.navCars:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_ofertas :
+            case R.id.navOfertas:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_novedades :
+            case R.id.navNovedades:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.navigation_maps :
+            case R.id.navMap:
                 intent = new Intent(getApplicationContext(),MapsActivity.class);
                 startActivity(intent);
                 break;
-             case R.id.navigation_contacto :
+             case R.id.navContact:
                 intent = new Intent(getApplicationContext(), Contacto.class);
                 intent.putExtra("section", "contacto");
                 startActivity(intent);

@@ -31,7 +31,7 @@ public class ReclamarFragment extends Fragment implements View.OnClickListener{
             }
         });
 
-        Button button2 = view.findViewById(R.id.button_enviar);
+        Button button2 = view.findViewById(R.id.sendButton);
         button2.setOnClickListener(this);
 
         return view;
@@ -50,13 +50,13 @@ public class ReclamarFragment extends Fragment implements View.OnClickListener{
         String[] companyEmail = {"ignacio.quintero@live.u-tad.com"};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
-        EditText msg = v.findViewById(R.id.editTextTextMultiLine);
+        EditText msg = v.findViewById(R.id.issueEditText);
         String message = msg.getText().toString();
 
-        EditText na = v.findViewById(R.id.editTextTextPersonName);
+        EditText na = v.findViewById(R.id.nameEditText);
         String name = na.getText().toString();
 
-        EditText em = v.findViewById(R.id.editTextTextEmailAddress);
+        EditText em = v.findViewById(R.id.mailEditText);
         String email = em.getText().toString();
 
         emailIntent.putExtra(Intent.EXTRA_EMAIL,companyEmail);
