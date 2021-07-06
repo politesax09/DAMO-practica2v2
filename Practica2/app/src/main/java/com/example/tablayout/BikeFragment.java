@@ -19,8 +19,7 @@ public class BikeFragment extends ListFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         SQLiteOpenHelper gameDbHelper = new BBDD(getContext()) ;
         SQLiteDatabase db = gameDbHelper.getReadableDatabase();
         Cursor cursor = db.query("VEHICLES",

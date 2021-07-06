@@ -22,10 +22,8 @@ public class CategoriesAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public CharSequence getPageTitle(int position)
-    {
-        switch (position)
-        {
+    public CharSequence getPageTitle(int position) {
+        switch (position) {
             case 0:
                 return m_context.getResources().getText(R.string.home_tab);
             case 1:
@@ -45,8 +43,7 @@ public class CategoriesAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        switch (position)
-        {
+        switch (position) {
             case 0:
                 return new HomeFragment();
             case 1:

@@ -15,8 +15,6 @@ import android.view.ViewGroup;
 
 public class OfertasFragment extends ListFragment {
 
-
-
     public OfertasFragment() {
         // Required empty public constructor
     }

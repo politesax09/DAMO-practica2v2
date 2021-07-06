@@ -7,11 +7,12 @@ import android.widget.ResourceCursorAdapter;
 import android.widget.TextView;
 
 
-public class VehicleAdapter extends ResourceCursorAdapter
-{
+public class VehicleAdapter extends ResourceCursorAdapter {
+
     public VehicleAdapter(Context context, int layout, Cursor cursor, int flags) {
         super(context, layout, cursor, flags);
     }
+
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
         TextView name = (TextView) view.findViewById(R.id.itemModelTextView);
@@ -19,7 +20,5 @@ public class VehicleAdapter extends ResourceCursorAdapter
 
         TextView price = (TextView) view.findViewById(R.id.itemPriceTextView);
         price.setText(cursor.getString(cursor.getColumnIndex("PRECIO")));
-
-
     }
 }

@@ -23,11 +23,8 @@ public class CarritoFragment extends ListFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
-        View view = inflater.inflate(R.layout.fragment_carrito,
-                container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_carrito, container, false);
 
         SQLiteOpenHelper gameDbHelper = new BBDD(getContext()) ;
         SQLiteDatabase db = gameDbHelper.getReadableDatabase();
@@ -45,8 +42,7 @@ public class CarritoFragment extends ListFragment {
                 0);
         setListAdapter(listAdapter);
         Button button = (Button) view.findViewById(R.id.finishButton);
-        button.setOnClickListener(new View.OnClickListener()
-        {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
@@ -71,8 +67,6 @@ public class CarritoFragment extends ListFragment {
             cursor.move(position+1);
             intent.putExtra("VEHICLEID", cursor.getString(0));
             startActivity(intent);
-        }
-        catch (Exception e) {
-        }
+        } catch (Exception e) {}
     }
 }

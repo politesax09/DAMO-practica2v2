@@ -21,16 +21,13 @@ public class HomeFragment extends ListFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
             return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
-    public void onListItemClick(ListView l, View v, int position, long id)
-    {
+    public void onListItemClick(ListView l, View v, int position, long id) {
         Intent intent = new Intent(getActivity(), VehicleDetailActivity.class);
         SQLiteOpenHelper gameDbHelper = new BBDD(getContext()) ;
-        try
-        {
+        try {
             SQLiteDatabase db = gameDbHelper.getReadableDatabase();
             Cursor cursor = db.query("VEHICLES",
                     new String[] {"_id", "MODEL","NOVEDADES"},
@@ -40,9 +37,7 @@ public class HomeFragment extends ListFragment {
             cursor.move(position+1);
             intent.putExtra("VEHICLEID", cursor.getString(0));
             startActivity(intent);
-        }
-        catch (Exception e) {
-        }
+        } catch (Exception e) {}
     }
  
   

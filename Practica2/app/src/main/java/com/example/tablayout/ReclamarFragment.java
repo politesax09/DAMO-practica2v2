@@ -18,8 +18,7 @@ public class ReclamarFragment extends Fragment implements View.OnClickListener{
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_reclamar, container, false);
 
@@ -41,7 +40,6 @@ public class ReclamarFragment extends Fragment implements View.OnClickListener{
     public void onStart () {
         super.onStart();
         View v = getView();
-
     }
 
     @Override
@@ -65,11 +63,8 @@ public class ReclamarFragment extends Fragment implements View.OnClickListener{
                 "Este mensaje ha sido enviado por".concat(name.concat("\n\n" +
                         "Email: ".concat(email)))));
         emailIntent.putExtra(Intent.EXTRA_SUBJECT,"RECLAMACION");
-
     }
 
     public void setImage(View v) {
-        // Añadir al carrito
-
     }
 }

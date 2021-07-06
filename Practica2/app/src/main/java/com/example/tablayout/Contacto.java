@@ -42,8 +42,7 @@ public class Contacto extends AppCompatActivity implements NavigationView.OnNavi
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigationdrawer_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        ContactoPagerAdapter adapter = new ContactoPagerAdapter(
-                getSupportFragmentManager(), this);
+        ContactoPagerAdapter adapter = new ContactoPagerAdapter(getSupportFragmentManager(), this);
 
         ViewPager pager = findViewById(R.id.viewpager_contacto);
         pager.setAdapter(adapter);
@@ -54,15 +53,12 @@ public class Contacto extends AppCompatActivity implements NavigationView.OnNavi
     }
 
     @Override
-    public void onBackPressed()
-    {
+    public void onBackPressed() {
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.contact_drawerLayout);
-        if (drawerLayout.isDrawerOpen(GravityCompat.START))
-        {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         }
-        else
-        {
+        else {
             super.onBackPressed();
         }
     }
@@ -71,8 +67,7 @@ public class Contacto extends AppCompatActivity implements NavigationView.OnNavi
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id = menuItem.getItemId();
         Intent intent = null;
-        switch (id)
-        {
+        switch (id) {
             case R.id.navHome:
                 intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);

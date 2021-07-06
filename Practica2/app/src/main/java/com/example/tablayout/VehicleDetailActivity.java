@@ -65,11 +65,7 @@ public class VehicleDetailActivity extends AppCompatActivity implements Navigati
 
             Button button = findViewById(R.id.buyButton);
             button.setOnClickListener(this);
-
-        }
-        catch (Exception e){
-        }
-
+        } catch (Exception e){}
     }
 
     @Override
@@ -81,21 +77,16 @@ public class VehicleDetailActivity extends AppCompatActivity implements Navigati
             SQLiteDatabase db = gameDbHelper.getReadableDatabase();
             db.update("VEHICLES", cv, "MODEL=?", new String[]{((TextView)findViewById(R.id.modelTextView)).getText().toString()});
             Log.d("Contenido", "updateado");
-        }
-        catch (Exception e){
-        }
-
+        } catch (Exception e){}
     }
 
 
     @Override
-    public void onBackPressed()
-    {
+    public void onBackPressed() {
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.GameDetail_drawer_layout);
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
-        }
-        else {
+        } else {
             super.onBackPressed();
         }
     }
@@ -129,7 +120,7 @@ public class VehicleDetailActivity extends AppCompatActivity implements Navigati
                 intent = new Intent(getApplicationContext(),MapsActivity.class);
                 startActivity(intent);
                 break;
-             case R.id.navContact:
+            case R.id.navContact:
                 intent = new Intent(getApplicationContext(), Contacto.class);
                 intent.putExtra("section", "contacto");
                 startActivity(intent);

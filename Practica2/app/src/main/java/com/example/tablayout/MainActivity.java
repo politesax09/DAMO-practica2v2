@@ -58,8 +58,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void onBackPressed()
-    {
+    public void onBackPressed() {
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout);
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
@@ -70,8 +69,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
-    {
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id = menuItem.getItemId();
         switch (id) {
             case R.id.navHome:
@@ -102,13 +100,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent intent = new Intent(getApplicationContext(),MapsActivity.class);
                 startActivity(intent);
                 break;
-             case R.id.navContact:
+            case R.id.navContact:
                 Intent contacto = new Intent(getApplicationContext(), Contacto.class);
                 contacto.putExtra("section", "contacto");
                 startActivity(contacto);
                 break;
-
-
         }
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout);
         drawerLayout.closeDrawer(GravityCompat.START);
@@ -130,12 +126,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             cursor.moveToNext();
             intent.putExtra("VEHICLEID", cursor.getString(0));
             startActivity(intent);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             String error =  e.getMessage().toString();
             Log.e(error, error);
         }
-
-
     }
 }

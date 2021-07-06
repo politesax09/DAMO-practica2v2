@@ -45,8 +45,7 @@ public class BBDD extends SQLiteOpenHelper {
 
 
 
-    public static void addVehicle (SQLiteDatabase db, String model, String company,String type,String oferta,String precio,String seleccionado,String novedades, int imageID)
-    {
+    public static void addVehicle (SQLiteDatabase db, String model, String company,String type,String oferta,String precio,String seleccionado,String novedades, int imageID) {
         ContentValues vehiclesData = new ContentValues();
         vehiclesData.put("MODEL", model);
         vehiclesData.put("COMPANY", company);
@@ -60,8 +59,5 @@ public class BBDD extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
-    {
-
-    }
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {}
 }

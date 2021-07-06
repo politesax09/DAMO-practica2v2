@@ -11,8 +11,7 @@ public class ContactoPagerAdapter extends FragmentPagerAdapter {
 
     private Context m_context;
 
-    public ContactoPagerAdapter (FragmentManager fragmentManager, Context context)
-    {
+    public ContactoPagerAdapter (FragmentManager fragmentManager, Context context) {
         super(fragmentManager);
         m_context = context;
     }
@@ -35,10 +34,8 @@ public class ContactoPagerAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public Fragment getItem (int position)
-    {
-        switch (position)
-        {
+    public Fragment getItem (int position) {
+        switch (position) {
             case 0:
                 return new ContactoFragment();
             case 1:

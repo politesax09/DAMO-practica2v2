@@ -15,12 +15,9 @@ import android.view.ViewGroup;
 
 public class NovedadesFragment extends ListFragment {
 
-   
     public NovedadesFragment() {
         // Required empty public constructor
     }
-
-    
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

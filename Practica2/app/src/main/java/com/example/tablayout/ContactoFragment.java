@@ -15,13 +15,10 @@ public class ContactoFragment extends Fragment implements View.OnClickListener{
 
     public ContactoFragment() {
         // Required empty public constructor
-
     }
 
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_contacto, container, false);
 
@@ -35,7 +32,6 @@ public class ContactoFragment extends Fragment implements View.OnClickListener{
     public void onStart () {
         super.onStart();
         View v = getView();
-
     }
 
     @Override
@@ -64,6 +60,5 @@ public class ContactoFragment extends Fragment implements View.OnClickListener{
         emailIntent.putExtra(Intent.EXTRA_SUBJECT,"CONSULTA");
 
         startActivity(Intent.createChooser(emailIntent, "Elige app a usar"));
-
     }
 }
