@@ -14,7 +14,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 
-public class Contacto extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class ContactoActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     CategoriesAdapter m_adapter;
     ViewPager         m_pager;
@@ -93,7 +93,7 @@ public class Contacto extends AppCompatActivity implements NavigationView.OnNavi
                 startActivity(intent);
                 break;
              case R.id.navContact:
-                intent = new Intent(getApplicationContext(), Contacto.class);
+                intent = new Intent(getApplicationContext(), ContactoActivity.class);
                 intent.putExtra("section", "contacto");
                 startActivity(intent);
                 break;

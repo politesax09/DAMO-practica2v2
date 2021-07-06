@@ -7,36 +7,36 @@
         <item
             android:id="@+id/navHome"
             android:icon="@android:drawable/btn_star"
-            android:title="@string/nd_home"
+            android:title="@string/title_tab_home"
             android:checked="true"/>
         <item
             android:id="@+id/navNovedades"
             android:icon="@android:drawable/btn_star"
-            android:title="@string/novedades_tab" />
+            android:title="@string/title_tab_novedades" />
         <item
             android:id="@+id/navOfertas"
             android:icon="@android:drawable/btn_plus"
-            android:title="@string/ofertas_tab" />
+            android:title="@string/title_tab_ofertas" />
         <item
             android:id="@+id/navBikes"
             android:icon="@android:drawable/ic_media_play"
-            android:title="@string/bike_tab"/>
+            android:title="@string/title_tab_bike"/>
         <item
             android:id="@+id/navCars"
             android:icon="@android:drawable/ic_media_play"
-            android:title="@string/car_tab"/>
+            android:title="@string/title_tab_car"/>
         <item
             android:id="@+id/navMap"
             android:icon="@android:drawable/ic_menu_mapmode"
-            android:title="@string/map_tab"/>
+            android:title="@string/title_tab_map"/>
         <item
             android:id="@+id/navContact"
             android:icon="@android:drawable/ic_menu_agenda"
-            android:title="@string/contacto_tab"/>
+            android:title="@string/title_tab_contacto"/>
         <item
             android:id="@+id/navCompra"
             android:icon="@drawable/ic_shopping_cart_black_35dp"
-            android:title="@string/carrito_tab"/>
+            android:title="@string/title_tab_carrito"/>
 
 
     </group>

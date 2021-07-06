@@ -121,7 +121,7 @@ public class VehicleDetailActivity extends AppCompatActivity implements Navigati
                 startActivity(intent);
                 break;
             case R.id.navContact:
-                intent = new Intent(getApplicationContext(), Contacto.class);
+                intent = new Intent(getApplicationContext(), ContactoActivity.class);
                 intent.putExtra("section", "contacto");
                 startActivity(intent);
                 break;

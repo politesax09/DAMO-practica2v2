@@ -25,17 +25,17 @@ public class CategoriesAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return m_context.getResources().getText(R.string.home_tab);
+                return m_context.getResources().getText(R.string.title_tab_home);
             case 1:
-                return m_context.getResources().getText(R.string.bike_tab);
+                return m_context.getResources().getText(R.string.title_tab_bike);
             case 2:
-                return m_context.getResources().getText(R.string.car_tab);
+                return m_context.getResources().getText(R.string.title_tab_car);
             case 3:
-                return m_context.getResources().getText(R.string.ofertas_tab);
+                return m_context.getResources().getText(R.string.title_tab_ofertas);
             case 4:
-                return m_context.getResources().getText(R.string.novedades_tab);
+                return m_context.getResources().getText(R.string.title_tab_novedades);
             case 5:
-                return m_context.getResources().getText(R.string.carrito_tab);
+                return m_context.getResources().getText(R.string.title_tab_carrito);
         }
         return null;
     }

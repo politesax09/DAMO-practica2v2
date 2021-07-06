@@ -2,7 +2,6 @@ package com.example.tablayout;
 
 import android.content.Context;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -20,9 +19,9 @@ public class ContactoPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return m_context.getResources().getText(R.string.contacto_tab);
+                return m_context.getResources().getText(R.string.title_tab_contacto);
             case 1:
-                return m_context.getResources().getText(R.string.reclamo_tab);
+                return m_context.getResources().getText(R.string.title_tab_reclamacion);
         }
         return null;
     }

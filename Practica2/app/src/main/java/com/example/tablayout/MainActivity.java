@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             case R.id.navContact:
-                Intent contacto = new Intent(getApplicationContext(), Contacto.class);
+                Intent contacto = new Intent(getApplicationContext(), ContactoActivity.class);
                 contacto.putExtra("section", "contacto");
                 startActivity(contacto);
                 break;

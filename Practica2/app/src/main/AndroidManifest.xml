@@ -15,15 +15,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tablayout">
-        <activity android:name=".Contacto" />
+        <activity
+            android:name=".ContactoActivity"
+            android:label="@string/title_activity_contacto"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-        <activity android:name=".CarroAdapter" />
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".VehicleDetailActivity" />
+        <activity
+            android:name=".VehicleDetailActivity"
+            android:label="@string/title_activity_detail"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
