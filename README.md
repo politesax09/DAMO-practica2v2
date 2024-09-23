@@ -1,2 +1,2 @@
 # DAMO-practica2v2
-Esta si q si
+Practica de Desarrollo de Aplicaciones Moviles. Esta si q si
